@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: 015_microservice_stock_dbservice
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Pradhi
+Implementation-Vendor-Id: com.microservice.stockquote
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/015_microser
+ vice_stock_dbservice/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
