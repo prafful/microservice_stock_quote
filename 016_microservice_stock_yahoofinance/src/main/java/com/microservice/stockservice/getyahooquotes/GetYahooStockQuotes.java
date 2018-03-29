@@ -23,11 +23,18 @@ public class GetYahooStockQuotes {
 	@Autowired
 	private RestTemplate restTemplate;	
 	
+	@RequestMapping("/hello")
+	public String welcome() {
+		return "Hello from Yahoo!!!";
+	}
+	
 	@RequestMapping("/{username}")
 	public List<Stock> getStockQuote(@PathVariable("username") String username) {
 		
 		ResponseEntity<List<String>> yahooQuoteResponse = restTemplate
-				.exchange("http://localhost:8181/stocks/get/quotes/" + username, HttpMethod.GET, null, 
+				.exchange("http://localhost:8181/stocks/get/quotes/" + username, 
+						HttpMethod.GET, 
+						null, 
 						new ParameterizedTypeReference<List<String>>() {
 		});
 		
