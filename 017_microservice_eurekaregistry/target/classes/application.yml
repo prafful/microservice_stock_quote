@@ -4,9 +4,22 @@ spring:
     
 server:
   port: 8080
-  
 eureka:
+  instance:
+    hostname: localhost
   client:
-    register-with-eureka: false
-    fetch-registry: false
-          
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+      waitTimeInMsWhenSyncEmpty: 0    
+    
+zuul:
+  prefix: /api 
+  routes:
+    db-service:
+      path: /db-service/**
+      url: http://localhost:8181
+    yahoo-service:
+      path: /yahoo-service/**
+      url: http://localhost:8282
+                
