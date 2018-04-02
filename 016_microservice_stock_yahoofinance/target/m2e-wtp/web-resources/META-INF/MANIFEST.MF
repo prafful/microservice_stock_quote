@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: 016_microservice_stock_yahoofinance
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Pradhi
+Implementation-Vendor-Id: com.microservice.yahoofinace
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/016_microser
+ vice_stock_yahoofinance/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: eureka-stock-registry
+    
+server:
+  port: 8080
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/ 
+  server:
+      waitTimeInMsWhenSyncEmpty: 0   
+    
+zuul:
+  prefix: /api 
+  routes:
+    db-service:
+      path: /db-service/**
+      url: http://localhost:8181
+    yahoo-service:
+      path: /yahoo-service/**
+      url: http://localhost:8282
+                
